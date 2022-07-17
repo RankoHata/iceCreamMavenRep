@@ -16,6 +16,8 @@
     <properties>
         <java.version>1.8</java.version>
         <jar.out.dir>D:\Work\Code\Java\repository</jar.out.dir>
+        <github.user.name>RankoHata</github.user.name>
+        <github.project.name>iceCreamMavenRep</github.project.name>
     </properties>
     <dependencies>
         <dependency>
@@ -51,26 +53,26 @@
         <repository>
             <id>maven.repo</id>
             <name>Local Staging Repository</name>
-            <url>file://${project.build.directory}/iceCreamMavenRep</url>
+            <url>file://${project.build.directory}/repo</url>
         </repository>
     </distributionManagement>
 
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    &lt;!&ndash; 跳过spring打包流程,避免导致其他项目无法引用该jar&ndash;&gt;-->
-<!--                    <skip>true</skip>-->
-<!--                    <excludes>-->
-<!--                        <exclude>-->
-<!--                            <groupId>org.projectlombok</groupId>-->
-<!--                            <artifactId>lombok</artifactId>-->
-<!--                        </exclude>-->
-<!--                    </excludes>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 跳过spring打包流程,避免导致其他项目无法引用该jar-->
+                    <skip>true</skip>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -78,7 +80,8 @@
                 <version>2.8.2</version>
                 <configuration>
                     <!-- 配置本地打包后的本地仓库存储地址，后续上传jar包会从此仓库中去取 -->
-                    <altDeploymentRepository>maven.repo::default::file://${project.build.directory}/iceCreamMavenRep</altDeploymentRepository>
+                    <altDeploymentRepository>maven.repo::default::file://${project.build.directory}/repo
+                    </altDeploymentRepository>
                 </configuration>
             </plugin>
 
@@ -86,37 +89,24 @@
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
-
                 <executions>
-
                     <execution>
                         <configuration>
                             <server>github</server>
                             <message>Maven artifacts for ${project.artifactId}-${project.version}</message>
                             <!-- 指定从哪里去取打好的包，并上传至github -->
-                            <outputDirectory>${project.build.directory}/iceCreamMavenRep</outputDirectory>
-                            <!--
-                                指定要上传的分支, refs/heads 这个不变，后面的分支名可选，可以采取一个jar包使用一个分支的策略。
-                                若多个jar包同时发布在同一个分支的话，会覆盖。。。。
-                            -->
+                            <outputDirectory>${project.build.directory}/repo</outputDirectory>
+                            <!-- 指定分支 -->
                             <branch>refs/heads/snapshot</branch>
-                            <!--                    &lt;!&ndash; 包含outputDirectory标签内填的文件夹中的所有内容 &ndash;&gt;-->
-                            <!--                    <includes>-->
-                            <!--                        <include>**/*</include>-->
-                            <!--                    </includes>-->
-                            <!-- github远程存储outputDirectory标签内填的文件夹中的内容 -->
-                            <repositoryName>iceCreamMavenRep</repositoryName>
-                            <!--
-                              github的用户名，注意不是登录的用户名，此项需要登录后，进入https://github.com/settings/profile页面配置Name属性，
-                              否则会报
-                              [ERROR] Failed to execute goal com.github.github:site-maven-plugin:0.12:site
-                              (default) on project rfcore: Error creating commit: Invalid request.
-                              [ERROR] For 'properties/name', nil is not a string.
-                              [ERROR] For 'properties/name', nil is not a string. (422)
-                              [ERROR] -> [Help 1]
-                              的错误
-                            -->
-                            <repositoryOwner>RankoHata</repositoryOwner>
+                            <!--                            <includes>-->
+                            <!--                                <include>**/*</include>-->
+                            <!--                            </includes>-->
+                            <!-- github 项目名(url路径里的) -->
+                            <repositoryName>${github.project.name}</repositoryName>
+                            <!-- github 用户名(url路径里的) -->
+                            <repositoryOwner>${github.user.name}</repositoryOwner>
+                            <!-- 是否采用merge方法 -->
+                            <!--                            <merge>true</merge>-->
                         </configuration>
                         <goals>
                             <goal>site</goal>

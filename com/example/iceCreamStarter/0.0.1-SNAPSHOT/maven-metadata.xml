@@ -3,21 +3,21 @@
   <groupId>com.example</groupId>
   <artifactId>iceCreamStarter</artifactId>
   <versioning>
-    <lastUpdated>20220717080002</lastUpdated>
+    <lastUpdated>20220717090336</lastUpdated>
     <snapshot>
-      <timestamp>20220717.080002</timestamp>
+      <timestamp>20220717.090336</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.0.1-20220717.080002-1</value>
-        <updated>20220717080002</updated>
+        <value>0.0.1-20220717.090336-1</value>
+        <updated>20220717090336</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20220717.080002-1</value>
-        <updated>20220717080002</updated>
+        <value>0.0.1-20220717.090336-1</value>
+        <updated>20220717090336</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
