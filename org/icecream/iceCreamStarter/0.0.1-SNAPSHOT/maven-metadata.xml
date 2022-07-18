@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
-  <groupId>com.example</groupId>
+  <groupId>org.icecream</groupId>
   <artifactId>iceCreamStarter</artifactId>
   <versioning>
-    <lastUpdated>20220717090336</lastUpdated>
+    <lastUpdated>20220718174855</lastUpdated>
     <snapshot>
-      <timestamp>20220717.090336</timestamp>
+      <timestamp>20220718.174855</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.0.1-20220717.090336-1</value>
-        <updated>20220717090336</updated>
+        <value>0.0.1-20220718.174855-1</value>
+        <updated>20220718174855</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20220717.090336-1</value>
-        <updated>20220717090336</updated>
+        <value>0.0.1-20220718.174855-1</value>
+        <updated>20220718174855</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

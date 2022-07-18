@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.example</groupId>
+  <groupId>org.icecream</groupId>
   <artifactId>iceCreamStarter</artifactId>
   <versioning>
     <versions>
       <version>0.0.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20220717090336</lastUpdated>
+    <lastUpdated>20220718174855</lastUpdated>
   </versioning>
 </metadata>
