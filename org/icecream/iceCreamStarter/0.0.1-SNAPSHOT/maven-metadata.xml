@@ -3,16 +3,16 @@
   <groupId>org.icecream</groupId>
   <artifactId>iceCreamStarter</artifactId>
   <versioning>
-    <lastUpdated>20220720164639</lastUpdated>
+    <lastUpdated>20220720164932</lastUpdated>
     <snapshot>
-      <timestamp>20220720.164639</timestamp>
-      <buildNumber>5</buildNumber>
+      <timestamp>20220720.164932</timestamp>
+      <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20220720.164639-5</value>
-        <updated>20220720164639</updated>
+        <value>0.0.1-20220720.164932-1</value>
+        <updated>20220720164932</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
