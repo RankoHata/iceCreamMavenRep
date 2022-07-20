@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>org.icecream</groupId>
-  <artifactId>iceCreamRedis</artifactId>
+  <artifactId>iceCreamUtil</artifactId>
   <versioning>
     <lastUpdated>20220720153444</lastUpdated>
     <snapshot>
