@@ -11,6 +11,7 @@
     <groupId>org.icecream</groupId>
     <artifactId>iceCreamStarter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>iceCreamStarter</name>
     <description>iceCreamStarter</description>
 
@@ -19,6 +20,11 @@
         <github.user.name>RankoHata</github.user.name>
         <github.project.name>iceCreamMavenRep</github.project.name>
     </properties>
+
+    <modules>
+        <module>iceCreamRedis</module>
+        <module>iceCreamUtil</module>
+    </modules>
 
     <dependencies>
         <dependency>
