@@ -3,21 +3,21 @@
   <groupId>org.icecream</groupId>
   <artifactId>iceCreamUtil</artifactId>
   <versioning>
-    <lastUpdated>20220720153444</lastUpdated>
+    <lastUpdated>20220720162103</lastUpdated>
     <snapshot>
-      <timestamp>20220720.153444</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20220720.162103</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.0.1-20220720.153444-1</value>
-        <updated>20220720153444</updated>
+        <value>0.0.1-20220720.162103-2</value>
+        <updated>20220720162103</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20220720.153444-1</value>
-        <updated>20220720153444</updated>
+        <value>0.0.1-20220720.162103-2</value>
+        <updated>20220720162103</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
