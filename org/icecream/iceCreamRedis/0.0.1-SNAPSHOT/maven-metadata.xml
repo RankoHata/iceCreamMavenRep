@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>org.icecream</groupId>
-  <artifactId>iceCreamStarter</artifactId>
+  <artifactId>iceCreamRedis</artifactId>
   <versioning>
     <lastUpdated>20220720164932</lastUpdated>
     <snapshot>
@@ -9,6 +9,11 @@
       <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.0.1-20220720.164932-1</value>
+        <updated>20220720164932</updated>
+      </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
         <value>0.0.1-20220720.164932-1</value>
