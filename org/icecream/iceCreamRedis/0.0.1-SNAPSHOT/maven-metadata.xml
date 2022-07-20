@@ -3,21 +3,21 @@
   <groupId>org.icecream</groupId>
   <artifactId>iceCreamRedis</artifactId>
   <versioning>
-    <lastUpdated>20220720162103</lastUpdated>
+    <lastUpdated>20220720163603</lastUpdated>
     <snapshot>
-      <timestamp>20220720.162103</timestamp>
-      <buildNumber>2</buildNumber>
+      <timestamp>20220720.163603</timestamp>
+      <buildNumber>3</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.0.1-20220720.162103-2</value>
-        <updated>20220720162103</updated>
+        <value>0.0.1-20220720.163603-3</value>
+        <updated>20220720163603</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20220720.162103-2</value>
-        <updated>20220720162103</updated>
+        <value>0.0.1-20220720.163603-3</value>
+        <updated>20220720163603</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
